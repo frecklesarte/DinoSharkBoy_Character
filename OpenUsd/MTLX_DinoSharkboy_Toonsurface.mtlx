@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<materialx version="1.39" colorspace="lin_rec709">
+  <disney_principled name="disney_principled" type="surfaceshader" xpos="-23.833334" ypos="-7.663793">
+    <input name="roughness" type="float" value="1" />
+    <input name="specular" type="float" value="0" />
+    <input name="subsurface" type="float" value="1" />
+    <input name="baseColor" type="color3" value="0.0103298, 0.500781, 1" />
+  </disney_principled>
+  <output name="output_BSDF" type="BSDF" xpos="-18.036232" ypos="-7.387931" />
+  <surfacematerial name="surfacematerial" type="material" xpos="-21.130434" ypos="-7.387931">
+    <input name="surfaceshader" type="surfaceshader" nodename="disney_principled" />
+  </surfacematerial>
+  <input name="input_BSDF" type="BSDF" xpos="-26.543478" ypos="-7.525862" />
+  <point_light name="point_light" type="lightshader" xpos="-17.507246" ypos="-2.051724">
+    <input name="position" type="vector3" interfacename="input_vector3" />
+  </point_light>
+  <position name="position_vector3" type="vector3" xpos="-21.000000" ypos="-3.491379" />
+  <input name="input_vector3" type="vector3" value="0, 0, 0" xpos="-20.014492" ypos="-2.250000" />
+</materialx>
